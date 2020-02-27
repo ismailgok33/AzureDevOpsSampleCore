@@ -30,10 +30,3 @@ steps:
     projectName: 'APP SERVICES'
     scanPath: '$(System.DefaultWorkingDirectory)/_asumansenol.AzureDevOpsSampleCore/drop'
     format: 'HTML'
-
-- task: OWASPDependencyCheck@0
-  inputs:
-    outputDirectory: '$(Agent.TempDirectory)/dependency-scan-results'
-    scanDirectory: '$(Build.SourcesDirectory)'
-    outputFormat: 'ALL'
-    useSonarQubeIntegration: false

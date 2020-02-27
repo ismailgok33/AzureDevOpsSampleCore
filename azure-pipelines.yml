@@ -23,3 +23,9 @@ steps:
   displayName: 'Publish Artifact: drop'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
+
+- task: dependency-check-build-task@5
+  inputs:
+    projectName: 'APP SERVICES'
+    scanPath: '$(System.DefaultWorkingDirectory)/_asumansenol.AzureDevOpsSampleCore/drop'
+    format: 'HTML'

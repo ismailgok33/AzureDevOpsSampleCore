@@ -19,7 +19,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'AzureCoreSamplePoject'
+    azureSubscription: 'AppServicesConn'
     appType: 'webApp'
     WebAppName: 'AzureDevOpsSampleCore'
     packageForLinux: '$(System.DefaultWorkingDirectory)/AzureCoreSamplePoject/drop/s/build'
